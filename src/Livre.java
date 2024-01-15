@@ -1,0 +1,19 @@
+public class Livre {
+    private String titre;
+    private Auteur auteur;
+
+    public Livre() {
+    }
+
+    public Livre(String titre, Auteur auteur) {
+        this.titre = titre;
+        this.auteur = auteur;
+    }
+
+    @Override
+    public String toString() {
+        return auteur.toString()+
+                " titre=" + titre +
+                auteur;
+    }
+}
